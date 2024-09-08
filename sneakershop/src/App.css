@@ -49,3 +49,13 @@
   font-size: 40px;
   font-family:Verdana, Tahoma, sans-serif;
 }
+
+button{
+  border: 0;
+  background-color: goldenrod;
+  width: 120px;          /* Equal width and height */
+  height: 50px;
+  text-align: center;
+  font-size: 30px;
+  border-radius:10%;
+}
