@@ -1,12 +1,17 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 export default function home() {
   return (
     <div>
       <p className="welcome">Welcome</p>
-      <p className="main_menu">Browse</p>
-      <p className="main_menu">Store</p>
-      <p className="main_menu">About</p>
+      <Link className="main-menu" to="/items">
+        Items
+      </Link>
+      <Link className="main-menu" to="/profile">
+        Profile
+      </Link>
     </div>
   );
 }
