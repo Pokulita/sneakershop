@@ -1,3 +1,4 @@
+import "../App.css";
 import React, { useState } from "react";
 import axios from "axios";
 
@@ -24,6 +25,21 @@ const UsernameForm = () => {
     }
   };
 
+  const [users, setUsers] = useState([]);
+
+  const refetch_users = () => {
+    // Fetch data from the Spring Boot backend
+    axios
+      .get("http://localhost:8080/api/users")
+      .then((response) => {
+        setUsers(response.data);
+        console.log("fuck");
+      })
+      .catch((error) => {
+        console.error("There was an error fetching the data!", error);
+      });
+  };
+
   return (
     <div>
       <h1>Submit Your Username</h1>
@@ -40,6 +56,15 @@ const UsernameForm = () => {
         <button type="submit">Submit</button>
       </form>
       {responseMessage && <p>{responseMessage}</p>}
+
+      <ul>
+        {users.map((user) => (
+          <li key={user.id}>
+            {user.id}: {user.name} {/* Render the user's id and name */}
+          </li>
+        ))}
+      </ul>
+      <button onClick={refetch_users}>Refetch</button>
     </div>
   );
 };
