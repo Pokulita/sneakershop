@@ -52,7 +52,8 @@
   color: var(--mainBlack);
   transition: var(--mainTransition);
   font-family:Verdana, Tahoma, sans-serif;
-  margin: 20px;
+  margin: 20px auto;
+  max-width: 130px;
 }
 
 button{
@@ -85,4 +86,63 @@ label{
     font-size: 26px;
     border-left: black solid 1px;
   
+}
+
+.popular{
+  text-align: center;
+}
+
+.popular-divider{
+  width: 20rem;
+  height: 5px;
+  margin: 0 auto;
+  background-color:darkslategray;
+}
+
+.loading {
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 3rem;
+  color: cornflowerblue;
+}
+
+.popular-items-center {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Default: 3 items per row */
+  grid-row-gap: 2rem;
+  grid-column-gap: 40px;
+}
+
+@media screen and (max-width: 900px) {
+  .popular-items-center {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row for smaller screens */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .popular-items-center {
+    grid-template-columns: repeat(1, 1fr); /* 1 item per row for very small screens */
+  }
+}
+
+.item-art {
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px;
+  border: 3px solid black;
+  text-decoration: none;
+  color: var(--mainBlack);
+  transition: var(--mainTransition);
+  background-color: aliceblue;
+}
+
+.item {
+  text-align: center;
+  font-size: 18px;
+  font-family: Verdana, Tahoma, sans-serif;
+  margin: 0 auto;
+  max-width: 130px;
 }
