@@ -2,6 +2,8 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
+import FeaturedItems from "../components/FeaturedItems";
+
 export default function home() {
   return (
     <div>
@@ -12,6 +14,7 @@ export default function home() {
       <Link className="main-menu" to="/profile">
         Profile
       </Link>
+      <FeaturedItems></FeaturedItems>
     </div>
   );
 }
