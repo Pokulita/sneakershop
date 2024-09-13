@@ -37,11 +37,18 @@
 
 .welcome{
   font-size: 100px;
-  margin: 100px auto 50px auto;
+  margin: 50px auto 50px auto;
   padding: 100 px;
   font-family:Verdana, Tahoma, sans-serif;
   border: 100 px black solid;
   text-align: center;
+}
+
+.welcome-divider{
+  width: 40rem;
+  height: 5px;
+  margin: 0 auto;
+  background-color:darkslategray;
 }
 
 .main-menu{
@@ -69,23 +76,30 @@ label{
   margin-right: 5px;
 }
 
+.navbar{
+  margin: 5px auto;
+}
+
 .navbar-link{
- 
+  font-family: Verdana, Tahoma, sans-serif;
     display: inline;
     text-decoration: none;
-    padding: 1rem 10;
+    padding: 10rem 100;
     color: var(--mainBlack);
     transition: var(--mainTransition);
     text-align: center;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: var(--mainSpacing);
-    margin-right: 50px;
-    margin-top: 10px;
-    margin-left:20px;
+    margin: 20px 30px;
     font-size: 26px;
-    border-left: black solid 1px;
+
   
+}
+
+.navbar-divider{
+  border-bottom: 0.3px black solid;
+  box-shadow: black;
 }
 
 .popular{
@@ -129,7 +143,6 @@ label{
 }
 
 .item-art {
-  max-width: ;
   text-align: center;
   margin: 0 auto;
   padding: 50px;
@@ -138,13 +151,14 @@ label{
   color: var(--mainBlack);
   transition: var(--mainTransition);
   background-color: aliceblue;
+  
 }
 
 .item {
   text-align: center;
   font-size: 18px;
   font-family: Verdana, Tahoma, sans-serif;
-  margin: 0 auto;
+  margin: 20px auto;
   width: 100px;
 }
 
@@ -153,4 +167,77 @@ label{
   height: 5px;
   margin: 20px auto;
   background-color:darkslategray;
+}
+
+.login{
+  display: block;
+}
+
+.submit-button{
+  border:0;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin:15px auto;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.refetch-button{
+  background-color: black;
+  color: white;
+  border:0;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin:15px auto;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.login-input{
+  border:0;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.login-field{
+  display: block;
+  font-size: 20px;
+  margin: 10px auto 10px auto;
+  padding: 100 px;
+  font-family:Verdana, Tahoma, sans-serif;
+  border: 100 px black solid;
+  text-align: center;
+  
+}
+
+.login-greet{
+  text-align: center;
+  justify-content: center;
+}
+
+.login-form{
+
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+.users-out{
+  display: block;
+  font-size: 20px;
+  margin: auto;
+  font-family:Verdana, Tahoma, sans-serif;
+  border: 100 px black solid;
+  text-align: center;
+}
+
+.response-login{
+  display: block;
+  font-size: 20px;
+  margin: auto;
+  font-family:Verdana, Tahoma, sans-serif;
+  border: 100 px black solid;
+  text-align: center;
 }

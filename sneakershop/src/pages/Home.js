@@ -6,8 +6,9 @@ import FeaturedItems from "../components/FeaturedItems";
 
 export default function home() {
   return (
-    <div>
+    <>
       <p className="welcome">Welcome</p>
+      <div className="welcome-divider"></div>
       <Link className="main-menu" to="/items">
         Items
       </Link>
@@ -15,6 +16,6 @@ export default function home() {
         Profile
       </Link>
       <FeaturedItems></FeaturedItems>
-    </div>
+    </>
   );
 }
