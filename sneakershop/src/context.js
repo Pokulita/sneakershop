@@ -16,7 +16,7 @@ export default class ItemProvider extends Component {
     let featuredItems = items.filter((item) => item.popular === true);
     this.setState({
       items,
-      featuredItems: items,
+      featuredItems,
       loading: false,
     });
   }

@@ -108,17 +108,17 @@ label{
 
 .popular-items-center {
   width: 100%;
-  max-width: 1200px;
+  max-width: 700px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Default: 3 items per row */
   grid-row-gap: 2rem;
-  grid-column-gap: 40px;
+  grid-column-gap: 1px;
 }
 
 @media screen and (max-width: 900px) {
   .popular-items-center {
-    grid-template-columns: repeat(2, 1fr); /* 2 items per row for smaller screens */
+    grid-template-columns: repeat(1, 1fr); /* 2 items per row for smaller screens */
   }
 }
 
@@ -129,6 +129,7 @@ label{
 }
 
 .item-art {
+  max-width: ;
   text-align: center;
   margin: 0 auto;
   padding: 50px;
@@ -144,5 +145,12 @@ label{
   font-size: 18px;
   font-family: Verdana, Tahoma, sans-serif;
   margin: 0 auto;
-  max-width: 130px;
+  width: 100px;
+}
+
+.all-items-divider{
+  width: 20rem;
+  height: 5px;
+  margin: 20px auto;
+  background-color:darkslategray;
 }
