@@ -8,7 +8,6 @@ const Profile = () => {
   return (
     <>
       <Navbar></Navbar>
-      <p>hello profile</p>
       <Login></Login>
     </>
   );

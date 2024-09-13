@@ -11,17 +11,20 @@ export default class Navbar extends Component {
   };
   render() {
     return (
-      <div>
-        <Link className="navbar-link" to="/">
-          <a>Home</a>
-        </Link>
-        <Link className="navbar-link" to="/items">
-          <a>Items</a>
-        </Link>
-        <Link className="navbar-link" to="/profile">
-          <a>Profile</a>
-        </Link>
-      </div>
+      <>
+        <div className="navbar">
+          <Link className="navbar-link" to="/">
+            <a>Home</a>
+          </Link>
+          <Link className="navbar-link" to="/items">
+            <a>Items</a>
+          </Link>
+          <Link className="navbar-link" to="/profile">
+            <a>Profile</a>
+          </Link>
+        </div>
+        <div className="navbar-divider"></div>
+      </>
     );
   }
 }
