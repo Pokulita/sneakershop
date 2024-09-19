@@ -6,7 +6,7 @@ import { Route, Routes } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Error from "./pages/Error";
-import Item from "./pages/Item";
+import Item, { ItemWrapper } from "./pages/Item";
 import Items from "./pages/Items";
 import Profile from "./pages/Profile";
 
@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/items/" element={<Items />} />
-        <Route exact path="/items/:slug" element={<Item />} />
+        <Route exact path="/items/:slug" element={<ItemWrapper />} />
         <Route exact path="/profile" element={<Profile />} />
         <Route path="*" element={<Error />} />
       </Routes>
