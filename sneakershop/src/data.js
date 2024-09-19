@@ -67,77 +67,77 @@ export default [
   },
   {
     sys: {
-      id: "6",
+      id: "7",
     },
     fields: {
       name: "Air-max",
-      slug: "item-6",
+      slug: "item-7",
       type: "six",
       popular: false,
     },
   },
   {
     sys: {
-      id: "6",
+      id: "8",
     },
     fields: {
       name: "LeBrone-1",
-      slug: "item-6",
+      slug: "item-8",
       type: "six",
       popular: false,
     },
   },
   {
     sys: {
-      id: "6",
+      id: "9",
     },
     fields: {
       name: "Tomato Soup",
-      slug: "item-6",
+      slug: "item-9",
       type: "six",
       popular: false,
     },
   },
   {
     sys: {
-      id: "6",
+      id: "10",
     },
     fields: {
       name: "toyota-prius",
-      slug: "item-6",
+      slug: "item-10",
       type: "six",
       popular: false,
     },
   },
   {
     sys: {
-      id: "6",
+      id: "11",
     },
     fields: {
       name: "Hubba-bubba",
-      slug: "item-6",
+      slug: "item-11",
       type: "six",
       popular: false,
     },
   },
   {
     sys: {
-      id: "6",
+      id: "12",
     },
     fields: {
       name: "gianis",
-      slug: "item-6",
+      slug: "item-12",
       type: "six",
       popular: false,
     },
   },
   {
     sys: {
-      id: "6",
+      id: "13",
     },
     fields: {
       name: "Ijab",
-      slug: "item-6",
+      slug: "item-13",
       type: "six",
       popular: false,
     },
