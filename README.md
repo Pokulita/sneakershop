@@ -1,4 +1,3 @@
 # sneakershop
 
-короче я хз че надо делать
-мб сначала выбрать на чем писать будем
+Interactive Basketball shoe store
