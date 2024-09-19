@@ -76,31 +76,43 @@ label{
   margin-right: 5px;
 }
 
-.navbar{
-  margin: 5px auto;
+.navbar {
+  position: relative; 
+  background-color: rgb(7, 7, 34);
+  height: 40px; 
+  padding: 0 20px; 
 }
 
-.navbar-link{
+.logo{
+  margin-top: 3px;
+  margin-bottom: 1px;
+  height: 35px;
+}
+
+.navbar-link {
+  display: flex;
+  align-items: center; 
+  text-decoration: none;
+  color: aliceblue; 
   font-family: Verdana, Tahoma, sans-serif;
-    display: inline;
-    text-decoration: none;
-    padding: 10rem 100;
-    color: var(--mainBlack);
-    transition: var(--mainTransition);
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: var(--mainSpacing);
-    margin: 20px 30px;
-    font-size: 26px;
-
-  
+  font-size: 26px;
+  margin: 0 15px; 
 }
 
-.navbar-divider{
-  border-bottom: 0.3px black solid;
-  box-shadow: black;
+.profile-icon {
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  margin: 10px; 
+  font-size: 26px; 
+  color: aliceblue; 
 }
+
+.navbar-divider {
+  height: 2px; 
+  background-color: rgb(7, 7, 34); 
+}
+
 
 .popular{
   text-align: center;
