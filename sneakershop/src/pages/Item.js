@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link, useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import { ItemContext } from "../context";
+import Footer from "../components/Footer";
 
 function ItemWrapper(props) {
   const { slug } = useParams();
@@ -36,9 +37,13 @@ export default class Item extends Component {
     const { name } = item;
 
     return (
-      <>
-        <h1>{name}</h1>
-      </>
+      <div className="app">
+        <Navbar />
+        <div className="content">
+          <h1>{name}</h1>
+        </div>
+        <Footer />
+      </div>
     );
   }
 }

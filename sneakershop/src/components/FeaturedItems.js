@@ -19,7 +19,7 @@ export default class FeaturedItems extends Component {
     return (
       <section className="featured-rooms">
         <div className="popular-divider" />
-        <h1 className="popular">Popular</h1>
+        <h1 className="popular">Popular models</h1>
         <div className="popular-items-center">
           {loading ? <Loading /> : items}
         </div>

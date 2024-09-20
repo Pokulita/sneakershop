@@ -1,5 +1,28 @@
 .App {
   text-align: center;
+  padding-bottom:0px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+.content {
+  flex-grow: 1; 
+  margin-bottom: 70px;
+}
+
+.footer {
+  font-family:Verdana, Tahoma, sans-serif;
+  background-color: rgb(7, 7, 34);
+  width: 100%;
+  height: 10rem;
+  color: white;
+  text-align: center;
+  padding: 50px;
+  margin-top: auto;
 }
 
 .App-logo {
@@ -62,6 +85,12 @@
   margin: 20px auto;
   max-width: 130px;
 }
+
+.main-menu:hover{
+  color: grey;
+}
+
+
 
 button{
   border: 2px solid black;
@@ -134,7 +163,7 @@ label{
 
 .popular-items-center {
   width: 100%;
-  max-width: 700px;
+  max-width: 1300px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Default: 3 items per row */
@@ -157,13 +186,22 @@ label{
 .item-art {
   text-align: center;
   margin: 0 auto;
-  padding: 50px;
+  padding: 0px;
   border: 3px solid black;
   text-decoration: none;
   color: var(--mainBlack);
   transition: var(--mainTransition);
   background-color: aliceblue;
   
+}
+
+.item-art:hover {
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: var(--darkShadow);
+}
+
+.item-art:hover img {
+  opacity: 0.3;
 }
 
 .item {
@@ -195,9 +233,12 @@ label{
   border-radius: 5px;
 }
 
-.refetch-button{
-  background-color: black;
+.submit-button:hover{
   color: white;
+  background-color: black;
+}
+
+.refetch-button{
   border:0;
   display: block;
   justify-content: center;
@@ -206,6 +247,12 @@ label{
   font-size: 20px;
   border-radius: 5px;
 }
+
+.refetch-button:hover{
+  color: white;
+  background-color: black;
+}
+
 
 .login-input{
   border:0;
@@ -252,4 +299,24 @@ label{
   font-family:Verdana, Tahoma, sans-serif;
   border: 100 px black solid;
   text-align: center;
+}
+.error-message{
+  text-align: center;
+  margin: auto;
+  margin-top: 10%;
+  text-decoration: none;
+  color: var(--mainBlack);
+  transition: var(--mainTransition);
+  font-family:Verdana, Tahoma, sans-serif;
+}
+
+.error-btn{
+  margin: auto;
+  border: black solid 2px; 
+  width: 15%;
+  text-decoration: none;
+  color: var(--mainBlack);
+  transition: var(--mainTransition);
+  font-family:Verdana, Tahoma, sans-serif;
+
 }
