@@ -9,6 +9,7 @@ import Error from "./pages/Error";
 import Item, { ItemWrapper } from "./pages/Item";
 import Items from "./pages/Items";
 import Profile from "./pages/Profile";
+import Footer from "./components/Footer";
 
 import Navbar from "./components/Navbar";
 
