@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import FeaturedItems from "../components/FeaturedItems";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import ItemList from "../components/ItemList";
 
 export default function home() {
   return (
@@ -18,6 +19,7 @@ export default function home() {
         </Link>
         <FeaturedItems></FeaturedItems>
       </div>
+      <ItemList></ItemList>
       <Footer /> {/* Footer is outside content */}
     </div>
   );

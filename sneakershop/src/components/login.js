@@ -33,7 +33,6 @@ const UsernameForm = () => {
       .get("http://localhost:8080/api/users")
       .then((response) => {
         setUsers(response.data);
-        console.log("fuck");
       })
       .catch((error) => {
         console.error("There was an error fetching the data!", error);
