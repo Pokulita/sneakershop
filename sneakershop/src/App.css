@@ -3,6 +3,7 @@
   padding-bottom:0px;
 }
 
+/*start footer*/
 .app {
   display: flex;
   flex-direction: column;
@@ -21,10 +22,10 @@
   height: 10rem;
   color: white;
   text-align: center;
-  padding: 50px;
+  
   margin-top: auto;
 }
-
+/*end footer*/
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -58,6 +59,7 @@
   }
 }
 
+/*start main page*/
 .welcome{
   font-size: 100px;
   margin: 50px auto 50px auto;
@@ -90,7 +92,7 @@
   color: grey;
 }
 
-
+/*end main page*/
 
 button{
   border: 2px solid black;
@@ -110,6 +112,9 @@ label{
   background-color: rgb(7, 7, 34);
   height: 40px; 
   padding: 0 20px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo{
@@ -119,14 +124,63 @@ label{
 }
 
 .navbar-link {
-  display: flex;
-  align-items: center; 
   text-decoration: none;
   color: aliceblue; 
   font-family: Verdana, Tahoma, sans-serif;
   font-size: 26px;
   margin: 0 15px; 
 }
+
+.centered{
+  position: absolute;
+  right:3%;
+  
+  text-align: center;
+  margin-bottom: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.search{
+  border-radius: 6px;
+  border: none;
+  width: 200px;
+  padding: 8px;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+
+  
+  
+}
+
+.search-expanded{
+  right: 3;
+  display: inline-block;
+  
+  justify-content: center;
+  margin: auto;
+  width: 77vw;
+  z-index: 1;
+  align-items: center;
+  border-radius: 0px;
+}
+
+@media (max-width: 768px) {
+
+  .search{
+    width: 100px;
+  }
+}
+
+/* Media query for extra small screens */
+@media (max-width: 480px) {
+
+  .search{
+    width: 50px;
+  }
+}
+
 
 .profile-icon {
   position: absolute; 
@@ -135,6 +189,7 @@ label{
   margin: 10px; 
   font-size: 26px; 
   color: aliceblue; 
+  
 }
 
 .navbar-divider {
@@ -195,9 +250,14 @@ label{
   
 }
 
+
 .item-art:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(14, 14, 72, 0.5);
   box-shadow: var(--darkShadow);
+}
+
+.item-img:hover{
+  
 }
 
 .item-art:hover img {
@@ -320,3 +380,28 @@ label{
   font-family:Verdana, Tahoma, sans-serif;
 
 }
+
+.item-compact{
+  display: block;
+  max-width: 400px;
+  
+
+  height: 80px;
+  border: 1px solid black;
+  text-decoration: none;
+  color: var(--mainBlack);
+  transition: var(--mainTransition);
+  
+}
+
+.compact-img{
+  display: inline;
+  height: 80px;
+}
+
+.compact-item-info{
+  display: inline-block;
+
+}
+
+
